@@ -1,0 +1,57 @@
+# ─────────────────────────────────────────────────────────────
+# requirements.txt
+# Telco Customer Churn Analysis — Portfolio
+#
+# How to use:
+#   python -m venv .venv
+#   source .venv/bin/activate    # Windows: .venv\Scripts\activate
+#   pip install -r requirements.txt
+#
+# Note on version pinning:
+#   Versions below are tested for the analysis pipeline as of
+#   May 2026. If you encounter resolver conflicts, try installing
+#   with `pip install -r requirements.txt --upgrade-strategy only-if-needed`.
+#   To regenerate exact versions from your own working environment:
+#       pip freeze > requirements.lock.txt
+# ─────────────────────────────────────────────────────────────
+
+# ── Core data stack ────────────────────────────────────────
+numpy==1.26.4
+pandas==2.2.2
+
+# ── Statistical testing ────────────────────────────────────
+# Used for: chi-square (chi2_contingency), Mann-Whitney U (mannwhitneyu),
+# and point-biserial correlation (pointbiserialr) — see Sections 4 & 6.
+scipy==1.13.1
+
+# ── Visualization (static) ─────────────────────────────────
+matplotlib==3.8.4
+seaborn==0.13.2
+
+# ── Visualization (interactive) ────────────────────────────
+# Used for exploratory interactive charts in notebook and Streamlit app.
+plotly==5.22.0
+
+# ── Streamlit app ──────────────────────────────────────────
+streamlit==1.35.0
+
+# ── Notebook environment ───────────────────────────────────
+# Required to open and execute the .ipynb locally.
+jupyter==1.0.0
+notebook==7.2.0
+ipykernel==6.29.4
+
+# ── Optional: Excel / data export ──────────────────────────
+# Required only if you want to export to .xlsx (notebook currently
+# exports to .csv and .json only — uncomment if you extend exports).
+# openpyxl==3.1.2
+
+# ─────────────────────────────────────────────────────────────
+# NOT included intentionally:
+#   - scikit-learn          → no predictive model in this project
+#                              (see DECISIONS.md, D-001)
+#   - imbalanced-learn      → no SMOTE used by design
+#                              (see DECISIONS.md, D-005)
+#   - google-colab          → only needed in Colab runtime;
+#                              do not install locally
+# ─────────────────────────────────────────────────────────────
