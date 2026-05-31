@@ -1,0 +1,42 @@
+{
+  "kpi": {
+    "total_customers": 7043,
+    "churned": 1869,
+    "stayed": 4720,
+    "joined": 454,
+    "churn_rate_pct": 26.54,
+    "total_revenue": 21371131.69,
+    "revenue_lost": 3684459.82,
+    "avg_monthly_churned": 74.44,
+    "avg_monthly_retained": 61.27,
+    "avg_satisfaction_churned": 1.74,
+    "avg_satisfaction_retained": 3.79
+  },
+  "hypotheses": {
+    "H1": {
+      "label": "MTM \u2265 2\u00d7 Yearly Churn",
+      "status": "CONFIRMED",
+      "detail": "45.8% vs 6.2% (7.4\u00d7)"
+    },
+    "H2": {
+      "label": "TechSupport & Security Reduce Churn",
+      "status": "CONFIRMED",
+      "detail": "\u0394 = 16\u201317pp"
+    },
+    "H3": {
+      "label": "Early Tenure = High Churn",
+      "status": "CONFIRMED",
+      "detail": "47.4% vs 17.1% (2.8\u00d7)"
+    },
+    "H4": {
+      "label": "Fiber Optic > DSL/Cable",
+      "status": "CONFIRMED",
+      "detail": "40.7% vs 18.6%"
+    },
+    "H5": {
+      "label": "E-Check > Auto-Pay",
+      "status": "CONFIRMED",
+      "detail": "45.3% vs 16.0%"
+    }
+  }
+}
